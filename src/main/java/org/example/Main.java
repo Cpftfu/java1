@@ -66,7 +66,7 @@ public class Main {
                         System.out.println("Введите второе число: ");
                         b = scanner.nextInt();
 
-                        System.out.print("Периметр прямоугольника равен:" + 2 * (a + b) + "!\n");
+                        System.out.print(ANSI_CYAN + "Периметр прямоугольника равен:" + 2 * (a + b) + "!\n" + ANSI_RESET);
 
                     } else if (Objects.equals(choose, "S")) {
                         System.out.println("Введите первое число: ");
@@ -75,13 +75,13 @@ public class Main {
                         System.out.println("Введите второе число: ");
                         b = scanner.nextInt();
 
-                        System.out.print("Площадь прямоугольника равна: " + a * b + "!\n");
+                        System.out.print(ANSI_CYAN + "Площадь прямоугольника равна: " + a * b + "!\n" + ANSI_RESET);
                         
                     } else if (Objects.equals(choose, "R")) {
                         System.out.println("Введите диаметр окружности: ");
                         r = scanner.nextDouble();
 
-                        System.out.print("Радиус окружности через диаметр равен: " + r/2  + "!\n");
+                        System.out.print(ANSI_CYAN + "Радиус окружности через диаметр равен: " + r/2  + "!\n" + ANSI_RESET);
                     }
             }
         }while (choise != 3);
